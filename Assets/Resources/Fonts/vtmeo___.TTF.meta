@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c1ef17befa375a44da176538714af470
+timeCreated: 1554517025
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: VTMeiOrnaments
+  fontNames:
+  - VTMeiOrnaments
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

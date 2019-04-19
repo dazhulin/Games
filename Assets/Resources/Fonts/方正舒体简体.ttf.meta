@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 873a469a6c7398e47ba9a40777df0571
+timeCreated: 1554517024
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FZShuTi-S05S
+  fontNames:
+  - FZShuTi-S05S
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
