@@ -84,6 +84,8 @@
     <Compile Include="Assets\Scripts\Columns.cs" />
     <Compile Include="Assets\Scripts\ColumnsManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ItweenDemo\ItweenMoveTo.cs" />
+    <Compile Include="Assets\Scripts\ItweenDemo\MoveToPath.cs" />
     <Compile Include="Assets\Scripts\iTween.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
