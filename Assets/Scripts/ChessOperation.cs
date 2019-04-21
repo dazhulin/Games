@@ -21,8 +21,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChessOperation : MonoBehaviour {
-    public static ChessOperation Instance;          // 静态实例
+    public static ChessOperation Instance;        // 静态实例
     internal bool IfExistBurstItem = false;       // 当前棋盘是否可以存在消除项
+    internal Chess chessItem1;                    // 用户选择的第1个棋子 
+    internal Chess chessItem2;                    // 用户选择的第2个棋子
 
     public void Awake()
     {
@@ -44,18 +46,18 @@ public class ChessOperation : MonoBehaviour {
 
     IEnumerator CheckIfCanBurst()
     {
-        yield return new WaitForSeconds(0.5F);    // 0.5秒延迟调用
+        yield return new WaitForSeconds(0.2F);    // 0.5秒延迟调用
         // 棋盘分配邻居
         AssignNeighbor();
 
         // 检测当前棋盘是否可以存在消除项
         CheckIfExistBurstItems();
-        yield return new WaitForSeconds(0.5F);
+        yield return new WaitForSeconds(0.2F);
         if (IfExistBurstItem)
         {
             // 删除当前棋盘可以消除的棋子
             DestoryChessIfCanBurst();
-            yield return new WaitForSeconds(0.5F);
+            yield return new WaitForSeconds(0.2F);
             // 增加新的棋子（棋盘顶部）
             AddNewChessByTop();
             yield return new WaitForSeconds(0.5F);

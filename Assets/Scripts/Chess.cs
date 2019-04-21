@@ -24,6 +24,9 @@ public class Chess : MonoBehaviour {
     public Chess[] chessNeighbor = new Chess[4];
     // 当前棋子是否可以消除
     internal bool CanBurstCurrentChess = false;
+    // 棋子所属的列
+    internal Columns fromColumns;           // 棋子所属的列(数据)
+    internal bool IsSelectMe = false;       // 是否选择本棋子
 
     internal string strNeighborLeft1 = "Left1";
     internal string strNeighborLeft2 = "Left2";
@@ -147,6 +150,20 @@ public class Chess : MonoBehaviour {
         print("strNeighborTop2 = " + strNeighborTop2);
         print("strNeighborDown1 = " + strNeighborDown1);
         print("strNeighborDown2 = " + strNeighborDown2);
+    }
+
+    // 选择本棋子
+    internal void SelectMe()
+    {
+        IsSelectMe = true;
+        this.transform.GetComponent<Renderer>().material.SetColor("_TintColor",new Color(1F,1F,1F,0.5F));
+    }
+
+    // 未选择本棋子
+    internal void UnSelectMe()
+    {
+        IsSelectMe = false;
+        this.transform.GetComponent<Renderer>().material.SetColor("_TintColor", new Color(0.5F, 0.5F, 0.5F, 0.5F));
     }
 
 }

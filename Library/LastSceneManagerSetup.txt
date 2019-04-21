@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Scenes1_BaseFrame.unity
+- path: Assets/Scenes/Scenes2_SwapChess.unity
   isLoaded: 1
   isActive: 1

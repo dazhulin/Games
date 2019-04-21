@@ -41,8 +41,11 @@ public class Columns : MonoBehaviour {
             cloneObj.transform.localScale = new Vector3(GameManager.Instance.FloChessScale, GameManager.Instance.FloChessScale, GameManager.Instance.FloChessScale);
             // 把克隆的棋子存入集合
             liChessArray.Add(cloneObj.GetComponent<Chess>());
+            // 棋子所属的列数据
+            cloneObj.GetComponent<Chess>().fromColumns = this;
         }
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -119,6 +122,8 @@ public class Columns : MonoBehaviour {
             //liChessArray.Add(cloneObj.GetComponent<Chess>());
             // 在集合的最顶端加入棋子
             liChessArray.Insert(0, cloneObj.GetComponent<Chess>());
+            // 棋子所属的列数据
+            cloneObj.GetComponent<Chess>().fromColumns = this;
         }
     }
 

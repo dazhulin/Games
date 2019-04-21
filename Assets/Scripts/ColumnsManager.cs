@@ -34,6 +34,7 @@ public class ColumnsManager : MonoBehaviour {
         for (int i = 0; i < colArray.Length; i++)
         {
             GameObject newObj = new GameObject();
+            // 存入集合中
             colArray[i] = newObj.AddComponent<Columns>();
             // 确立父子关系
             newObj.transform.parent = this.transform;
